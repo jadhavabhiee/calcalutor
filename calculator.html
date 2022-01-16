@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calculater</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CALCULATER</h1>
+
+        <div class="calculater">
+        <p  id="screen"> </p>
+        
+        <table>
+
+        <tr>
+            <td><button onclick="concatNumber('(');">(</button></td>
+            <td><button onclick="concatNumber(')');">)</button></td>
+            <td><button onclick="clearAll();">AC</button></td>
+            <td><button onClick='setOperator("%");'>%</button></td>
+            
+        </tr>
+
+            <tr>
+                <td><button onclick="concatNumber('7');">7</button></td>
+                <td><button  onclick="concatNumber('8');">8</button></td>
+                <td><button  onclick="concatNumber('9');">9</button></td>
+                <td><button onClick='setOperator("*");'>*</button></td>
+             </tr>
+
+
+             <tr>
+                <td><button  onclick="concatNumber('4');">4</button></td>
+                <td><button  onclick="concatNumber('5');">5</button></td>
+                <td><button  onclick="concatNumber('6');">6</button></td>
+                <td><button onClick='setOperator("-");'>-</button></td>
+                </tr>
+
+
+                <tr>
+                    <td><button  onclick="concatNumber('1');">1</button></td>
+                    <td><button  onclick="concatNumber('2');">2</button></td>
+                    <td><button  onclick="concatNumber('3');">3</button></td>
+                    <td><button onClick='setOperator("+");'>+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button  onclick="concatNumber('0');">0</button></td>
+                        <td><button  onclick="concatNumber('.');">.</button></td>
+                        <td><button onclick="equals();">=</button></td>
+                        <td><button onClick='setOperator("/");'>/</button></td>
+                        </tr>
+
+
+
+        </table>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
